@@ -34,3 +34,9 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Docker ###
+compose.yml
+
+### Project Configuration ###
+application.properties
