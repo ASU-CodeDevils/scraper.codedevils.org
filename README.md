@@ -2,7 +2,7 @@
 
 ## Project Description
 
-The Job Scraper Project is designed to create a comprehensive system for scraping job postings from various websites and serving the collected data through an API built with Spring Boot. The project involves multiple contributors who will each be responsible for implementing a script to scrape different job posting websites.
+The Job Scraper Project is designed to create a comprehensive system for scraping job postings from various websites and serving the collected data through an API built with SpringBoot. The project involves multiple contributors who will each be responsible for implementing a script to scrape different job posting websites.
 
 ### How It Works
 
