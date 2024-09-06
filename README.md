@@ -48,15 +48,15 @@ To get started with the CD Job Scraper Project, follow these steps:
    * Ensure you have Java (Version 21) and Gradle (Version 8.5) installed.
      * For UNIX systems (i.e. macOS, Linux, or Windows WSL), use [SDKMAN](https://sdkman.io/) to install the correct version of Java and Gradle.
      * **Not recommended**: For Windows systems, install [Java 21](https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.exe) and [Gradle 8.5](https://gradle.org/install/#manually) manually.
-   * Set up your database and configure the connection in `application.properties`.
+   * Set up your local environment variables: create a file called `.env` in the root directory and add the following lines:
 
-        **Database Setup:**
-        * Create a new file named `compose.yaml` in the root directory of the project (i.e. `/`).
-        * Copy the contents of `example-compose.yaml` into `compose.yaml` and replace the placeholders with your database credentials.
-
-        **Application Configuration:**
-        * Create a new file named `application.properties` in the `src/main/resources` directory.
-        * Copy the contents of `example-application.properties` into `application.properties` and replace the placeholders with your database credentials
+      ```shell
+      MYSQL_ROOT_PASSWORD=<create your own password>
+      MYSQL_DATABASE=<name your database>
+      MYSQL_USER=<create your own username>
+      MYSQL_PASSWORD=<create a differnent password than ROOT_PASSWORD>
+      MYSQL_URL=jdbc:mysql://localhost:3306/<MYSQL_DATABASE>
+      ```
 
 1. **Run the Application** :
 
